@@ -1,0 +1,164 @@
+button {
+	box-shadow: 0px 0px 12px 1px #7DDB94;
+	background-color: Transparent;
+	border-radius:2px;
+	border:1px solid #fff;
+	cursor:pointer;
+	color:#fff;
+	font-family:Arial;
+	font-size:35px;
+	font-weight:bold;
+	padding:20px 59px;
+	text-decoration:none;
+	text-shadow:0px 2px 44px #4F22DA;
+	text-align: center;
+
+}
+.pages {
+    float:none;
+    display:block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+button:hover {
+	background-color:rgb(0, 184, 201);
+
+}
+button:active {
+	position:relative;
+	top:1px;
+}
+
+.btn-toolbar{
+margin-left: 0px;
+text-align: center;
+align-content: center;
+
+}
+
+.btn-group{
+text-align: center;
+align-content: center;
+margin: 10px auto;
+display: block;
+position:relative;
+display: inline-block;
+vertical-align: middle;
+
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+  background-color: #224900;
+  text-align: center;
+}
+
+
+.header {
+  padding: 1px;
+  text-align: center;
+  background-image: linear-gradient(#e83c7e, #24a6d5);
+  width: 100%;
+  color: #fff;
+  font-size: 30px;
+  margin-bottom: 0px;
+
+}
+
+
+h1 {
+    margin-bottom: 9px;
+    padding:10px 25px;
+    font-size:35px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    font-family: Impact, Charcoal, sans-serif;
+
+
+
+}
+
+p {
+    color: #fff;
+    padding:2px 41px;
+    font-size:15px;
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+}
+
+h2 {
+    color: #fff;
+    padding:0px 10px;
+    font-size:20px;
+    text-align: center;
+    font-family: "Lucida Console", Monaco, monospace;
+}
+
+
+footer {
+    background-color: #FFE1A4 ;
+    box-shadow: 0 1px 1px 0 rgba(4, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    font: bold 16px sans-serif;
+    overflow: hidden;
+    text-align: center;
+    padding: 15px 10px 15px;
+    margin-top: 80px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 8px;
+  height: 400px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.img-container {
+        text-align: center;
+        display: block;
+      }
+
+.wrapper {
+    text-align: center;
+}
+
+item {
+background-color: red;
+}
+
+
+.form-control {
+    color: #00384B;
+    background-color: #D1FFF9;
+    border : 2px solid #8CBDFF;
+    border-radius: .6rem
+}
+
+
+table {
+  border-collapse: collapse;
+
+}
+}
