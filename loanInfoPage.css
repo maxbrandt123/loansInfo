@@ -53,7 +53,7 @@ body {
   font-family: Arial;
   margin: 0;
   background-image: url("https://secureservercdn.net/198.71.233.227/ac3.282.myftpupload.com/wp-content/uploads/2018/08/Dark-Money-Background-Seamless-300x300.jpg");
-  background-color: #224900;
+  background-color: #000000;
   text-align: center;
 }
 
@@ -110,54 +110,24 @@ footer {
     margin-top: 80px;
 }
 
-* {
-  box-sizing: border-box;
-}
 
-.column {
-  float: left;
-  width: 50%;
-  padding: 8px;
-  height: 400px;
+a:link {
+  color: CornflowerBlue;
 }
 
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-
-
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
-
-.img-container {
-        text-align: center;
-        display: block;
-      }
-
-.wrapper {
-    text-align: center;
-}
-
-item {
-background-color: red;
+a:visited {
+  color: IndianRed;
 }
 
 
-.form-control {
-    color: #00384B;
-    background-color: #D1FFF9;
-    border : 2px solid #8CBDFF;
-    border-radius: .6rem
+a:hover {
+  color: hotpink;
 }
 
 
-table {
-  border-collapse: collapse;
-
+a:active {
+  color: blue;
 }
+
 }
