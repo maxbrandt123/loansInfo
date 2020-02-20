@@ -99,7 +99,7 @@ h2 {
 
 
 footer {
-    clear: both;
+    background-color: #000000;
     box-shadow: 0 1px 1px 0 rgba(4, 0, 0, 0.12);
     box-sizing: border-box;
     width: 100%;
@@ -159,23 +159,5 @@ background-color: red;
 table {
   border-collapse: collapse;
 
-}
-a:link {
-  color: red;
-}
-
-/* visited link */
-a:visited {
-  color: green;
-}
-
-/* mouse over link */
-a:hover {
-  color: hotpink;
-}
-
-/* selected link */
-a:active {
-  color: blue;
 }
 }
