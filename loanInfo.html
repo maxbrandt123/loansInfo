@@ -6,6 +6,11 @@
     <link rel="stylesheet" type="text/css" href="loanInfoPage.css">
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+
+    </style>
+
 </head>
 <body>
 
@@ -43,7 +48,7 @@ $$x = \frac{P*(\frac{r}{n})}{(1-(1+\frac{r}{n})^{-n*t})}$$
     P	=	initial principal balance<br>
     r	=	interest rate<br>
     n	=	number of times interest applied per time period<br>
-    t	=	number of time periods elapsed<br>
+    t	=	number of time periods elapsed <br>
 </p>
 
 
@@ -58,9 +63,45 @@ $$x = \frac{P*(\frac{r}{n})}{(1-(1+\frac{r}{n})^{-n*t})}$$
     charge <b>eachother</b> for small loans. As Libor rises, so does the interest payment. As Libor lowers, so does
     the interest payment.
 </p>
+
+<br>
+
+<form>
+
+				<h2>Inputs</h2>
+				<label for="principal">Principal: </label><input type="text" id="principal"/>
+				<br>
+                <br>
+				<label for="interest">Interest Rate: </label><input type="text" id="interest"/>
+				<br>
+                <br>
+				<label for="timeline">Timeline: </label>
+
+                    <select id="timeline">
+					<option value="12">12 Months</option>
+					<option value="24">24 Months</option>
+					<option value="36">36 Months</option>
+					<option value="48">48 Months</option>
+					<option value="60">60 Months</option>
+                    <option value="72">72 Months</option>
+                    <option value="84">84 Months</option>
+					<option value="96">96 Months</option>
+					<option value="108">108 Months</option>
+					<option value="120">120 Months</option>
+					<option value="132">132 Months</option>
+                    <option value="144">144 Months</option>
+				</select>
+				<br>
+                <br>
+				<input type="button" value="Create Table" onclick="tableFunction"/>
+
+		</form>
+
+
 </body>
 
 <footer>
-    <p>Made by Max Brandt - <a href="loanResources.html">Resources</a> </p>
+    <p>Made by Max Brandt - <a href="loanResources.html">Citation</a> </p>
 </footer>
+
 </html>
