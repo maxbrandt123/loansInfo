@@ -1,16 +1,9 @@
 
 <html>
-<head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<head>
 <title>test doc</title>
+  <link rel="stylesheet" type="text/css" href="loanInfoPage.css">
 <meta name="resource-type" content="document">
-
-
-<meta name="keywords" content="Mortgages, Interest Rates, HSH, Information, Consumer, Loan, Calculator, Finance, Refinance, Relocation">
-<meta http-equiv="Reply-to" name="reply-to" content="info@hsh.com">
-
-
-
-
 
 </script>
 
@@ -23,8 +16,7 @@ var months=0;
 var nls="";
 var rr="\r";
 var b="                               ";
-var d="-----------------------------"
-+"----------------------------------";
+var d="-----------------------------"+"----------------------------------";
 var s="$";
 function iA(){
  this.length=iA.arguments.length;
@@ -148,10 +140,7 @@ function prtSched(){
  ls="Amortization Schedule: "+document.isn.months.value
  +" months to repay "+s+document.isn.amt.value
  +" at "+document.isn.per.value+"% interest."+rr+d+rr
- +"Payment       Payment       Interest      Principal     Balance"
- +rr
- +"Number        Amount        Amount        Reduction     Due"
- +rr+d+rr;
+
  for (var j=0;j<months;j++){
   ntr=(amt*pct);
   str="";
@@ -187,9 +176,7 @@ function prtSched(){
   +rr;
   }
   document.isn.sched.value=ls+d+rr
-  +"  * Interest calculated at 1/12th of annual interest rate on"
-  +rr+"    the remaining principal amount. (Rounding errors "
-  +"possible)"+rr+d+rr;
+
  }
 function fmtIt(){
  pos=str.indexOf(".");
@@ -242,16 +229,17 @@ function alert(){
 <tbody><tr valign="top">
 <td align="center">
 <br>
-  Loan Term in Months
+  <p>Loan Term in Months</p>
 <br>
 <br></td>
 <td align="center"><height="2" width="15" border="0">
-<br>Rate
+<br>
+  <p>Rate</p>
 <br>
 <br></td>
 <td align="center">
 <br>
-  Amount in USD
+  <p>Amount in USD</p>
 <br>
 <br></td> </tr>
 <tr valign="middle">
