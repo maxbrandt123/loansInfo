@@ -1,11 +1,10 @@
-
 <html>
 <head>
-<title>test doc</title>
-  <link rel="stylesheet" type="text/css" href="loanInfoPage.css">
-<meta name="resource-type" content="document">
+    <title>test doc</title>
+    <link rel="stylesheet" type="text/css" href="loanInfoPage.css">
+    <meta name="resource-type" content="document">
 
-</script>
+    </script>
 
 <script language="JavaScript">
 
@@ -25,29 +24,29 @@ function iA(){
   }
  }
 var pwr=new iA(10);
-var dec=new iA(16);
+var decimal=new iA(16);
 pwr[0]=1;
 for (var i=0;i<9;i++){
  pwr[i+1]=pwr[i]*10;
 }
-dec[0]=.1;
-dec[1]=.01;
-dec[2]=.001;
-dec[3]=.0001;
-dec[4]=.00001;
-dec[5]=.000001;
-dec[6]=.0000001;
-dec[7]=.00000001;
-dec[8]=.000000001;
-dec[9]=.0000000001;
-dec[10]=.00000000001;
-dec[11]=.000000000001;
-dec[12]=.0000000000001;
-dec[13]=.00000000000001;
-dec[14]=.000000000000001;
-dec[15]=.0000000000000001;
+decimal[0]=.1;
+decimal[1]= 0.01;
+decimal[2]= 0.001;
+decimal[3]= 0.0001;
+decimal[4]= 0.00001;
+decimal[5]= 0.000001;
+decimal[6]= 0.0000001;
+decimal[7]= 0.00000001;
+decimal[8]= 0.000000001;
+decimal[9]= 0.0000000001;
+decimal[10]= 0.00000000001;
+decimal[11]= 0.000000000001;
+decimal[12]= 0.0000000000001;
+decimal[13]= 0.00000000000001;
+decimal[14]= 0.000000000000001;
+decimal[15]= 0.0000000000000001;
 
-var ns="01234567890";
+var numbers="01234567890";
 var cr="";
 var str="";
 
@@ -62,28 +61,28 @@ function stn(){
  strl=str.length;
  for (var i=strl-1;i>-1;i--){
   cr=str.substring(i,i+1);
-  pos=ns.indexOf(cr);
+  pos=numbers.indexOf(cr);
   num+=pos*pwr[strl-i-1];
   }
   if (sfx!=""&&sfx.length>dp){
-   pos=ns.indexOf(sfx.charAt(dp+1));
+   pos=numbers.indexOf(sfx.charAt(dp+1));
    if (pos>4){
-    pos=ns.indexOf(sfx.charAt(dp));
+    pos=numbers.indexOf(sfx.charAt(dp));
     sfx=sfx.substring(0,dp-1)+(pos+1);
     }
    }
   if (sfx!=""){
    for (var i=0;i<dp;i++){
     cr=sfx.substring(i,i+1);
-    pos=ns.indexOf(cr);
-    num+=pos*dec[i];
+    pos=numbers.indexOf(cr);
+    num+=pos*decimal[i];
     }
 /*    sfx="";
     sfx+=num;
     pos=sfx.indexOf(".");
     sfx=sfx.substring(pos+1,sfx.length);
     if (sfx.charAt(dp+1)=="9"){
-     num+=dec[sfx.length-2];
+     num+=decimal[sfx.length-2];
      } */
   }
  }
@@ -191,7 +190,7 @@ function fmtIt(){
  str+="0000";
  str=str.substring(0,pos+4);
  cr=str.charAt(str.length-1);
- pos=ns.indexOf(cr);
+ pos=numbers.indexOf(cr);
  str=str.substring(0,str.length-1);
  if (pos>5){
   fmtIt1();
@@ -200,12 +199,12 @@ function fmtIt(){
  function fmtIt1(){
   for (var k=str.length-1;k>-1;k--){
    cr=str.charAt(k);
-   posn=ns.indexOf(cr);
+   posn=numbers.indexOf(cr);
    if (posn<0){
     k--;
    }
    else{
-    str=str.substring(0,k)+ns.substring(posn+1,posn+2)
+    str=str.substring(0,k)+numbers.substring(posn+1,posn+2)
     +str.substring(k+1,str.length);
     if (posn!=9){
      k=-1;
@@ -224,55 +223,90 @@ function alert(){
 <body>
 
 <div align="center">
-<form name="isn">
-<table width="80%" border="01">
-<tbody><tr valign="top">
-<td align="center">
-<br>
-  <p>Loan Term in Months</p>
-<br>
-<br></td>
-<td align="center"><height="2" width="15" border="0">
-<br>
-  <p>Rate</p>
-<br>
-<br></td>
-<td align="center">
-<br>
-  <p>Amount in USD</p>
-<br>
-<br></td> </tr>
-<tr valign="middle">
-<td align="center"><br><input type="text" name="months" value="36" size="3"> Months
-<td align="center"><br><input type="text" name="per" value="4" size="2">%
-<td align="center"><br><input type="text" name="amt" value="10000" size="8">$
-<br><br></td></tr>
-<tr>
-<td colspan="3" align="center" valign="middle">
-<br><input type="button" value="Calculate" onclick="testIt(this.form)">
+    <form name="isn">
+        <table width="80%" border="10">
+            <tbody>
+            <tr valign="top">
+                <th align="center">
+                    <p>Loan Term in Months</p>
+                </th>
+                <th align="center" height="2" width="15" border="0">
+                    <p>Rate</p>
+                </th>
+                <th align="center">
+                    <p>Amount in USD</p>
+                </th>
+            </tr>
+            <tr valign="middle" padding="20">
+                <td align="center"><input type="text" name="months" value="36" size="3"> Months
+                <td align="center"><input type="text" name="per" value="4" size="2">%
+                <td align="center"><input type="text" name="amt" value="10000" size="8">$</td>
 
-<br>
 
-<textarea name="sched" rows="20" cols="75"></textarea>
-<br>
-</td>
-</tr>
-</tbody>
-</table><br>
+            </tr>
 
-</form>
+            <tr>
+                <td colspan="3" align="center" valign="middle">
+                    <textarea name="sched" rows="20" cols="75"></textarea>
+                    <table style="width:100%">
+                        <tr>
+                            <th>Month</th>
+                            <th>Beginning Balance</th>
+                            <th>Interest</th>
+                            <th>Payment</th>
+                            <th>Balance</th>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+            </tbody>
+
+            </td>
+            </tr>
+            <tr>
+
+                <td colspan="3" align="center"><input type="button" value="Calculate" onclick="testIt(this.form)"></td>
+            </tr>
+
+            </tbody>
+
+
+        </table>
+    </form>
 </div>
 
-<br>
 
 <div align="center">
 
-<tbody><tr align="left" valign="middle">
-<td colspan="4"></td>
-</tr>
+    <tbody>
+    <tr align="left" valign="middle">
+        <td colspan="4"></td>
+    </tr>
 
 
-</tbody>
 </div>
 </small>
 </body>
