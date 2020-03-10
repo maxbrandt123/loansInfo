@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+	<head>
+
+		<title>Simple Interest Loan Amortization Table Generator</title>
+        <link rel="stylesheet" type="text/css" href="loanInfoPage.css">
+		<script language="JavaScript" type="text/javascript" src="amort.js"></script>
+	</head>
+
+	<body>
+		<h1>Simple Interest Loan Amortization Table Generator</h1>
+
+		<form>
+
+				<legend>Inputs</legend>
+				<label for="principal"><b>Principal:</b></label>
+				<input type="text" id="principal" />
+				<br>
+				<label for="interest"><b>Interest:</b></label>
+				<input type="text" id="interest" />
+				<br>
+				<label for="terms"><b>Terms:</b></label>
+				<select id="terms">
+					<option value="12">12 Months</option>
+					<option value="24">24 Months</option>
+					<option value="36">36 Months</option>
+					<option value="48">48 Months</option>
+					<option value="60">60 Months</option>
+            		<option value="60">72 Months</option>
+				</select>
+				<br />
+				<input type="button" value="Calculate" onclick="calculateSimpleTable()" />
+
+		</form>
+
+		<form>
+            <br>
+			<legend>Outputs</legend>
+				<div id="Result"></div>
+		</form>
+	</body>
+</html>
+

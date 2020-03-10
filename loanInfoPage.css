@@ -139,8 +139,11 @@ table, th, td {
   border-collapse: collapse;
   text-align: center;
   box-shadow: 0 1px 1px 0 rgba(4, 0, 0, 0.12);
-  background-color: #0FA100;
+  background-color: #D8FFD4 ;
 }
 
+{
+color: #fff;
+}
 
 }
