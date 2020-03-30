@@ -27,7 +27,6 @@
         }
     }
 
-
      //function to make the table
      //Does the math to find the parts/info of the loan that are necessary for making the table.
      //Displays ammortization table
@@ -209,7 +208,7 @@ function simpleAmortization(balance, interestRate, terms)
             balance = balance - monthlyPrincipal;
         }
 
-        //closes the open table when, as this is the end of making the table for display
+        //closes the open table when it is the end of making the table for display
         result += "</table>";
 
         //puts the table on the page
