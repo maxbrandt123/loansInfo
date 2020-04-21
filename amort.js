@@ -1,5 +1,12 @@
     function calculateCompoundTable()
     {
+
+        var d1 = new Date();
+
+        //number of milliseconds since 1/1/1970
+        var n1 = d1.getTime();
+
+
         //When the calculate button is pressed, do this:
         var balance = parseFloat(document.getElementById("principal").value);
         var interestRate = parseFloat(document.getElementById("interest").value/100.0);
@@ -25,6 +32,12 @@
             //returns error if inputs are invalid
             div.innerHTML += "Please Check your inputs and retry - invalid values.";
         }
+        var d2 = new Date();
+        var n2 = d2.getTime();
+
+
+
+
     }
 
      //function to make the table
@@ -88,6 +101,14 @@
 
         //closes the open table when, as this is the end of making the table for display
         result += "</table>";
+
+        function myFunction() {
+        var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+        } else {
+        x.style.display = "none";
+     }
 
         //puts the table on the page
         return result;
