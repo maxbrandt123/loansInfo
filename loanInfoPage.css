@@ -1,6 +1,6 @@
 button {
-	box-shadow: 0px 0px 12px 1px #7DDB94;
-	background-color: Tranumbersparent;
+	box-shadow: 0px 0px 12px 1px;
+	background-color: lightblue;
 	border-radius:2px;
 	border:1px solid #fff;
 	cursor:pointer;
@@ -8,7 +8,7 @@ button {
 	font-family:Arial;
 	font-size:35px;
 	font-weight:bold;
-	padding:20px 59px;
+	padding:10px 29px;
 	text-decimaloration:none;
 	text-shadow:0px 2px 44px #4F22DA;
 	text-align: center;
@@ -23,7 +23,7 @@ button {
 }
 
 button:hover {
-	background-color:rgb(0, 184, 201);
+	background-color:rgb(fff);
 
 }
 button:active {
@@ -139,7 +139,8 @@ table, th, td {
   border-collapse: collapse;
   text-align: center;
   box-shadow: 0 1px 1px 0 rgba(4, 0, 0, 0.12);
-  background-color: #D8FFD4 ;
+  background-color: #3A3A3A;
+  padding: 15px;
 }
 
 {

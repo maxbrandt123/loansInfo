@@ -10,9 +10,13 @@
 		<script language="JavaScript" type="text/javascript" src="amort.js"></script>
 	</head>
 
-	<body>
+
+
 		<h1>Compound Interest Loan Amortization Table Generator</h1>
 
+        <table style= margin-left:auto;margin-right:auto;">
+  <tr>
+	<td>
 		<form>
 
 				<legend>Inputs</legend>
@@ -35,19 +39,64 @@
 				<input type="button" value="Calculate" onclick="calculateCompoundTable()" />
 
 		</form>
-
+<br>
 <button onclick="myFunction()">Try it</button>
+<br>
+        <br>
+<div style="color:dodgerblue" id="myDIV">
+Now you see me.
 
-<div id="myDIV">
-This is my DIV element.
 </div>
 
 
 		<form>
             <br>
-			<legend>Outputs</legend>
-				<div id="Result"></div>
+			<div style="color:dodgerblue">
+                Outputs</div>
+				<div style="color:dodgerblue" id="Result"></div>
 		</form>
+    </td>
+
+      <td>
+		<form>
+
+				<legend>Inputs</legend>
+				<label for="principal"><b>Principal:</b></label>
+				<input type="text" id="principal" />
+				<br>
+				<label for="interest"><b>Interest:</b></label>
+				<input type="text" id="interest" />
+				<br>
+				<label for="terms"><b>Terms:</b></label>
+				<select id="terms">
+					<option value="12">12 Months</option>
+					<option value="24">24 Months</option>
+					<option value="36">36 Months</option>
+					<option value="48">48 Months</option>
+					<option value="60">60 Months</option>
+            		<option value="60">72 Months</option>
+				</select>
+				<br />
+				<input type="button" value="Calculate" onclick="calculateCompoundTable()" />
+
+		</form>
+<br>
+<button onclick="myFunction()">Try it</button>
+<br>
+        <br>
+<div style="color:dodgerblue" id="myDIV">
+Now you see me.
+
+</div>
+
+
+		<form>
+            <br>
+			<div style="color:dodgerblue">
+                Outputs</div>
+				<div style="color:dodgerblue" id="Result"></div>
+		</form>
+    </td>
 	</body>
 </html>
 

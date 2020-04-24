@@ -34,6 +34,7 @@
         }
         var d2 = new Date();
         var n2 = d2.getTime();
+        return result;
 
 
 
@@ -101,18 +102,11 @@
 
         //closes the open table when, as this is the end of making the table for display
         result += "</table>";
-
-        function myFunction() {
-        var x = document.getElementById("myDIV");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-        } else {
-        x.style.display = "none";
-     }
-
-        //puts the table on the page
         return result;
+
+
     }
+
 
     function validateCompoundInputs(value)
     {
@@ -126,6 +120,31 @@
             return true;
         }
     }
+
+        function myFunction() {
+
+
+        var x = document.getElementById("myDIV");
+        if (x.style.display == "none") {
+            x.style.display = "block";
+            return result;
+
+        } else {
+            x.style.display = "none";
+
+         //puts the table on the page
+
+
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -237,4 +256,5 @@ function simpleAmortization(loanAmount, interestRate, duration)
 
         //puts the table on the page
         return result;
+    }
     }
